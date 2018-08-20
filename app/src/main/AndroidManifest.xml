@@ -18,7 +18,18 @@
 
         <provider android:name="MyProvider"
                   android:authorities="com.hy.myprovider"
-                    />
+                  android:permission="com.hy.myprovider.Provider"
+                  android:readPermission="com.hy.myprovider.READ"
+                  android:writePermission="com.hy.myprovider.WRITE"
+                  android:exported="true"
+            />
+
+
+        
     </application>
+    <!--声明本应用可允许通信的权限-->
+    <permission android:name="com.hy.myprovider.Provider" android:protectionLevel="normal"></permission>
+    <permission android:name="com.hy.myprovider.READ" android:protectionLevel="normal"></permission>
+    <permission android:name="com.hy.myprovider.WRITE" android:protectionLevel="normal"></permission>
 
 </manifest>

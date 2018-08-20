@@ -1,0 +1,5 @@
+进程内通信:
+        1.创建数据库类
+        2.自定义ContentProvider类
+        3.注册创建的ContentProvider类
+        4.进程内访问ContentProvider数据
